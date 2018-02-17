@@ -1,0 +1,23 @@
+{
+  "name": "angularjs-test",
+  "version": "1.0.0",
+  "description": "Create simple Single page application which should show the list of Articles with the title and short description and show all Articles content on the separate route.   1. Demo server with content https://inx.wp-funnel.com/wp-json/wp/v2/posts   2. WordPress REST API documentation http://v2.wp-api.org/reference/",
+  "main": "index.js",
+  "dependencies": {
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://aburdeyna@github.com/aburdeyna/angularjs-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aburdeyna/angularjs-test/issues"
+  },
+  "homepage": "https://github.com/aburdeyna/angularjs-test#readme"
+}
