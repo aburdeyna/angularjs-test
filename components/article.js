@@ -4,7 +4,7 @@ angular.module('myApp').component('article', {
                         <div class="card-body">
                             <h5 class="card-title">{{$ctrl.artc.title.rendered}}</h5>
                             <p class="card-text">{{$ctrl.artc.excerpt.rendered}}</p>
-                            <a href="#" class="btn btn-primary">Read more</a>
+                            <a href="#!/post/{{$ctrl.artc.id}}" class="btn btn-primary">Read more</a>
                         </div>
                     </div>
                 </div>`,

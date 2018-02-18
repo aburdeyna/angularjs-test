@@ -8,14 +8,27 @@
     <title>Angular1.6</title>
 </head>
 <body ng-app="myApp">
-    <articles></articles>
+    <div ng-view></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-sanitize.js"></script>
+    
     <script>                    
-        var app = angular.module('myApp', []);
+        var app = angular.module('myApp', ['ngRoute', 'ngSanitize']);
+            app.config(function($routeProvider) {
+                $routeProvider
+                .when("/", {
+                    template : "<articles></articles>"
+                })
+                .when("/post/:postId", {
+                    template : `<read-more><read-more>`,
+                })
+            });
     </script>
     <script src="./components/articles.js"></script>
     <script src="./components/article.js"></script>
+    <script src="./components/readMore.js"></script>    
     <script src="./services/posts.js"></script>
 </body>
 </html>
